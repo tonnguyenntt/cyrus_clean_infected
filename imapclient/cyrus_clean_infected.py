@@ -96,9 +96,3 @@ if __name__ == '__main__':
     msgUid = int(affectedRecord[1])
     delRes = proceed_delete(imapObj,mailBox,msgUid)
     print('%s|%d.|%s|%s' % (mailBox, msgUid, delRes[0], delRes[1]))
-#  imapObj = connect_imap(inputObj[0], inputObj[1])
-#  mailBox = 'Sent'
-#  msgUid = 7
-#  delRes = proceed_delete(imapObj,mailBox,msgUid)
-#  print('%s/%d.|%s|%s' % (mailBox, msgUid, delRes[0], delRes[1]))
-#  disconnect_imap(imapObj)
